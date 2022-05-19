@@ -2,6 +2,7 @@
 
 body  {
   font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 }
 main {
   background-color: mediumaquamarine;
@@ -10,11 +11,14 @@ main {
   margin: auto;
   display: flex;
   align-items: center;
-  transform: skew(-10deg, -10deg);
 }
-
+h1 {
+  text-align: left;
+}
 main > div {
   width: 40%;
   margin: auto;
   padding: 10%;
+  transform: skewX(-10deg) rotate (-10deg);
+
 }
