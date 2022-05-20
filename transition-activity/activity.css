@@ -1,8 +1,15 @@
-.transform {
-    transition-duration: 2s;
+.container {
+    position: relative;
+    overflow: hidden;
 }
-
-#coverimg :hover {
+.caption__media {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: .5em;
+  }
+.caption_overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -11,17 +18,18 @@
     padding: 10px;
     color: white;
     transform: translateY(100%);
-    transition: transform .35s ease-out;
+    transition: .35s ease-out;
+}
+.container:hover .caption_overlay {
+    transform: translateY(0);
+}
+.transform {
+    transition-duration: 2s;
 }
 #captionTitleText {
-    margin-top: 20px;
-    color: white;
-    z-index: .7;
-    position: relative;
-
-}
-#coverimg {
-    z-index: .5;
-    position: top;
-    display: block;
+    text-align: match-parent;
+    max-width: 75%;
+    display: inline-block;  
+    margin: auto;  
+    text-size-adjust: auto;
 }
